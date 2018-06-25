@@ -30,6 +30,7 @@
     "@storybook/addon-info": "^3.3.13",
     "@storybook/react": "^3.3.13",
     "@types/jest": "^22.1.4",
+    "babel-jest": "^23.0.1",
     "babel-plugin-transform-react-jsx": "^6.23.0",
     "babel-preset-es2015": "^6.24.0",
     "babel-preset-stage-3": "^6.24.1",
