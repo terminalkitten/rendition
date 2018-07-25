@@ -59,4 +59,5 @@ cause a re-render of the component and will not be reflected on the table.
 | `rowCheckboxAttributes`    | `object` | - | - | Attributes to pass to the checkbox element used in a row |
 | `rowKey`    | `key of T` | - | - | A field on a row that contains a unique identifier, can help speed up render performance and is required for the `onCheck` property |
 | `toBodyPrefix`    | <code>JSX.element &#124; JSX.Element</code> | - | - | JSX element(s) to display at the top of the table body |
+| `highlightedRow`    | <code>string &#124; number</code> | - | - | Highlights a row. This property requires that you have provided a `rowKey` property: the row with a `rowKey` property that matches this value is highlighted. 
 

@@ -676,4 +676,23 @@ describe('Table component', () => {
       expect(component.find('[data-display="table-body"] span.foobarbaz')).toHaveLength(1)
     })
   })
+
+  describe('highlightedRow property', () => {
+    it('should highlight the specified row', () => {
+      const component = mount(
+        <Provider>
+          <Table
+            rowKey='pokedex_number'
+            highlightedRow={2}
+            columns={[ { field: 'Name' } ]}
+            data={PokeDex}
+          />
+        </Provider>
+      )
+
+      const match = component.find('[data-highlight=true]')
+      expect(match).toHaveLength(1)
+      expect(match.text()).toEqual('Ivysaur')
+    })
+  })
 })
